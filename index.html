@@ -4,33 +4,19 @@
 
   <link rel="icon" href="Bilder/Marin logo.png">
   <title>Sebastian Sjösvärd</title>
-  <link rel='stylesheet' href='index.css'/>
+  <link rel='stylesheet' href='index copy.css'/>
 </head>
 
 <body>
 
- 
-
-
 <div class="header">
-  <button class="Header_button" id="myDIV" onclick="myFunction();myFunction2()">Toggle Light mode</button>
-  
+  <button class="Header_button" id="myDIV" onclick="myFunction();myFunction2();myFunction3()">Toggle Light mode</button>
 </div> 
 
 <div class="row">
-    <div class="row1">
-      <div class="column2" ><a href=""><img src="Bilder/Our_future 300x400.png" /></a></div>
-      <div class="column1" ><a href=""><img src="Bilder/Kurs_dokement 200x200.png" /></a><p>Framtida kurser</p></div>
-    </div>
-
-    <div class="row1">  
-        <div class="column2" ><a href="https://cloud.timeedit.net/bth/web/sched1/ri109602055Z7YQ65X65Y600y7056W05X6Q65Q0Q68774Z489Y797.html" target="_blank"><img src="Bilder/Time_Edit 300x400.png" /></a></div>
-        <div class="column1" ><a href="https://cloud.timeedit.net/bth/web/sched1/ri109602055Z7YQ65X65Y600y7056W05X6Q65Q0Q68774Z489Y797.html" target="_blank"><img src="Bilder/Temp-200x200.jpg" /></a><p>Time Edit</p></div>
-    </div>
-    <div class="row1">  
-      <div class="column2" ><a href=""><img src="Bilder/Deadline 300x400.png" /></a></div>
-      <div class="column1" ><a href=""><img src="Bilder/deadline 200x200.png" /></a><p >Deadlines</p></div>
-    </div>
+    <div class="row1" ><a href="" target="_blank"><button class="button5 button1" >Framtid</button></a></div>
+    <div class="row1" ><a href="" target="_blank"><button class="button5 button2" >Schema</button></a></div>
+    <div class="row1" ><a href="" target="_blank"><button class="button5 button3" >Deadlines</button></a></div>
 </div>
 
 <div class="footer">
@@ -40,12 +26,18 @@
 </div>
 
 <script>
-
   function myFunction() {
      var element = document.body;
      element.classList.toggle("light-mode");
   }
+  function myFunction3() {
+     const collection = document.getElementsByClassName("button5");
+        collection[0].classList.toggle("Dark-mode");
+        collection[1].classList.toggle("Dark-mode");
+        collection[2].classList.toggle("Dark-mode");
+    
 
+  }
     function myFunction2() {
       
       var x = document.getElementById("myDIV");
@@ -53,15 +45,11 @@
         x.innerHTML = "Toggle Dark mode";
       } else {
         x.innerHTML = "Toggle Light mode";
-      
 }
-
-
 }
 
   </script>
   
-
 </body>
 </html>
 

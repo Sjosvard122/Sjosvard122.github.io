@@ -4,6 +4,9 @@ body {
   background-color:rgb(70, 69, 69);
   color:white;
   font-size: 30px; 
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .header {
@@ -11,43 +14,51 @@ body {
   color: black;
   text-align: center;
   padding: 20px;
-
+  margin-top: 30px;
 }
 .row{
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 flex-wrap: wrap;
+align-items: center;
+
+
 }
 .row1{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 300px;
-
+  margin-top: 20px;
 }
-.column1{
-margin-top: 40px;
-width: 200px;
-
-text-align: center;
-margin-left: 50px;
-
-
+.button5 {
+    width: 300px;
+    height: 600px;
+    background-color: transparent;
+    border-radius: 40px;
+    border:2px solid white;
+    transition-duration: 0.4s;
+    font-size: 30px;
+    color: white;
 }
-.column2{
-display: flex;
-justify-content: center;
-text-align: center;
+.button1:hover{
 
+    box-shadow: inset 0 0 40px rgba(0, 110, 255, 0.5), 0 0 0 ;
+}
+.button2:hover{
+
+  box-shadow: inset 0 0 40px rgba(252, 214, 1, 0.5), 0 0 0 ;
+}
+.button3:hover{
+
+  box-shadow: inset 0 0 40px rgba(0, 255, 34, 0.5), 0 0 0 ;
 }
 
 .light-mode {
   background-color: rgb(204, 204, 204);
   color: black;
 }
+.Dark-mode{
+  color:black;
 
+}
 
 .Header_button{
   border: none;
@@ -61,6 +72,8 @@ text-align: center;
 .footer{
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-top: 50px;
 }
 .footer1{
  padding:10px;
