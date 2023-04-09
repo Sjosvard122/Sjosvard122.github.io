@@ -1,57 +1,35 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html>
 <head>
-
-  <link rel="icon" href="Bilder/Marin logo.png">
-  <title>Sebastian Sjösvärd</title>
-  <link rel='stylesheet' href='index.css'/>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
 <body>
-
-<div class="header">
-  <button class="Header_button" id="myDIV" onclick="myFunction();myFunction2();myFunction3()">Toggle Light mode</button>
-</div> 
-
-<div class="row">
-    <div class="row1" ><a href="" target="_blank"><button class="button5 button1" >Framtid</button></a></div>
-    <div class="row1" ><a href="" target="_blank"><button class="button5 button2" >Schema</button></a></div>
-    <div class="row1" ><a href="" target="_blank"><button class="button5 button3" >Deadlines</button></a></div>
-</div>
-
-<div class="footer">
-  <div class="footer1"><a href="https://www.linkedin.com/in/sebastian-sj%C3%B6sv%C3%A4rd-577a87211/" target="_blank"><img src="Bilder/linkedin.svg" width="50" height="50" /></a></div>
-  <div class="footer1"><a href="https://www.instagram.com/sjosvard_25/" target="_blank"><img src="Bilder/instagram.svg" width="50" height="50" /></a></div>
-  <div class="footer1"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="Bilder/youtube.svg" width="50" height="50" /></a></div>
-</div>
-
-<script>
-  function myFunction() {
-     var element = document.body;
-     element.classList.toggle("light-mode");
-  }
-  function myFunction3() {
-     const collection = document.getElementsByClassName("button5");
-        collection[0].classList.toggle("Dark-mode");
-        collection[1].classList.toggle("Dark-mode");
-        collection[2].classList.toggle("Dark-mode");
-    
-
-  }
-    function myFunction2() {
+    <header>
+        <div class="navbar">
+          <img src="Bilder-Html\logga_makerninja-min.jpg" alt="MakerSpaceNinja-logo" class="nav-image">
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-button">Home</a></li>
+              <li><a href="#" class="nav-button">About</a></li>
+              <li><a href="#" class="nav-button">Services</a></li>
+              <li><a href="#" class="nav-button">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       
-      var x = document.getElementById("myDIV");
-      if (x.innerHTML === "Toggle Light mode") {
-        x.innerHTML = "Toggle Dark mode";
-      } else {
-        x.innerHTML = "Toggle Light mode";
-}
-}
+      <body>
+        <div class="grid-container">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+      </body>
 
-  </script>
-  
+      <footer>
+        <div class="footer-container">
+          <p>© 2023 My Website. All Rights Reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>
-
-
-

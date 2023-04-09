@@ -29,19 +29,18 @@ body {
   .navbar a {
     color: white;
     text-decoration: none;
-    font-size: large;
   }
 
   .nav-image {
-    width: 6%; /* Set the image width to 50% of its original size */
-    height: 6%; /* Set the height to auto so that the aspect ratio is maintained */
+    width: 8%; /* Set the image width to 50% of its original size */
+    height: 8%; /* Set the height to auto so that the aspect ratio is maintained */
   }
 
   .nav-button {
     display: inline-block; /* Display the button as an inline-block element */
     padding: 10px 20px; /* Add some padding around the text inside the button */
-    /* Set the background color of the button */
-  
+    background-color: #07616f; /* Set the background color of the button */
+    color: #ffffff; /* Set the text color of the button */
     text-decoration: none; /* Remove the underline from the text */
     font-weight: bold; /* Make the text inside the button bold */
     border: none; /* Remove the border around the button */
@@ -54,19 +53,42 @@ body {
     background-color: #08a0b7; /* Change the background color of the button on hover */
   }
 
+  .box {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* set two equal columns */
+    grid-template-columns: repeat(3, 1fr); /* set two equal columns */
     gap: 80px;
     margin: 50px;
   }
   
-  .grid-item {
-    background-color: #ddd;
-    height: 600px;
-    border-radius: 20px;
-  }
+  .grid-item1 {
+    background-color: #ffffff;
+    height: 100px;
+ 
+    
   
+  }
+  .grid-item2 {
+    background-color: blue;
+    height: 50px;
+  }
+
   footer {
     position: absolute;
     bottom: 0;
