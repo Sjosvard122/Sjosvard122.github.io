@@ -1,10 +1,16 @@
+html, body {
+  height: 100%;
+}
 body {
     background-color: #40444b ; /* Set the background color to a light gray */
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
   }
 
-.navbar {
+  .navbar {
     display: flex;
     align-items: center;
     padding: 25px;
@@ -12,7 +18,7 @@ body {
   }
   
   .navbar img {
-    margin-right: 20px;
+    margin-right: 1%;
   }
   
   .navbar ul {
@@ -26,27 +32,27 @@ body {
     margin-right: 1rem;
   }
   
-  .navbar a {
+.navbar a {
     color: white;
     text-decoration: none;
+    font-size: large;
   }
 
-  .nav-image {
-    width: 8%; /* Set the image width to 50% of its original size */
-    height: 8%; /* Set the height to auto so that the aspect ratio is maintained */
+ .nav-image {
+    width: 6%; /* Set the image width to 50% of its original size */
+    height: 6%; /* Set the height to auto so that the aspect ratio is maintained */
+    min-height: 33px;
+    min-width: 60px;
   }
 
   .nav-button {
     display: inline-block; /* Display the button as an inline-block element */
     padding: 10px 20px; /* Add some padding around the text inside the button */
-    background-color: #07616f; /* Set the background color of the button */
-    color: #ffffff; /* Set the text color of the button */
     text-decoration: none; /* Remove the underline from the text */
     font-weight: bold; /* Make the text inside the button bold */
     border: none; /* Remove the border around the button */
     border-radius: 5px; /* Add some rounded corners to the button */
     font-size: 16px; /* Set the font size of the button */
-    margin-right: 10px; /* Add some margin between the buttons */
   }
   
   .nav-button:hover {
@@ -68,36 +74,54 @@ body {
   .box p {
     font-size: 16px;
     line-height: 1.5;
+    color: white;
   }
 
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* set two equal columns */
-    gap: 80px;
+    display: flex;
+    flex-wrap: wrap; /* set two equal columns */
+    justify-content: center;
+    gap: 40px;
     margin: 50px;
   }
-  
+
+  .grid-container-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+  }
+  .grid-item {
+    flex: 1 0 25%; /* By default, show 4 items in each row */
+  }
   .grid-item1 {
     background-color: #ffffff;
-    height: 100px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
  
-    
-  
   }
   .grid-item2 {
     background-color: blue;
     height: 50px;
-    width: 300px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
   }
-
-  footer {
-    position:absolute;
-    bottom: 0;
-    height: 50px; /* Set the height of the footer */
+  .center-text p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* remove any default margin */
+  }
+  
+  .footer-container {
+    height:  100%; /* Set the height of the footer */
     width: 100%;
-    padding: 10px 0px 10px 0px;
     background-color: rgba(51, 51, 51, 0.7); /* White color with 50% opacity */
     color: #fff; /* Set the text color */
     text-align: center;
+    text-align: center;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
   }
