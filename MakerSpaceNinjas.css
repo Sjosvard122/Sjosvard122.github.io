@@ -58,6 +58,7 @@ html, body {
   
   .nav-button:hover {
     background-color: #08a0b7; /* Change the background color of the button on hover */
+    text-decoration: underline;
   }
   main {
     flex-grow: 1;
