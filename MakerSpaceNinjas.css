@@ -1,13 +1,14 @@
 html, body {
   height: 100%;
 }
-body {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #40444b ; /* Set the background color to a light gray */
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+ 
   }
 
   .navbar {
@@ -58,7 +59,9 @@ body {
   .nav-button:hover {
     background-color: #08a0b7; /* Change the background color of the button on hover */
   }
-
+  main {
+    flex-grow: 1;
+  }
   .box {
     text-align: center;
     color: white;
@@ -124,4 +127,7 @@ body {
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center the contents horizontally */
     align-items: center; /* Center the contents vertically */
+  }  
+  footer {
+    flex-shrink: 0;
   }
