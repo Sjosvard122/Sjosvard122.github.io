@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakerSpaceNinjas</title>
     <link rel="stylesheet" type="text/css" href="MakerSpaceNinjas.css">
 </head>
 <body>
     <header>
+    <nav>
         <div class="navbar">
-          <img src="logga_makerninja-min.jpg" alt="MakerSpaceNinja-logo" class="nav-image">
-          <nav>
-            <ul>
-                <li><a href="index.html" class="nav-button">Home</a></li>
-                <li><a href="Projects.html" class="nav-button">Projects</a></li>
-                <li><a href="#" class="nav-button">3D-Skrivare</a></li>
-                <li><a href="MakerSpaceNinjas.html" class="nav-button">MakerSpaceNinja</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-button">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
+            <img src="logga_makerninja-min.jpg" alt="MakerSpaceNinja-logo" class="nav-image">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="Projects.html" class="nav-button">Projects</a>
+            <a href="#" class="nav-button">3D-Skrivare</a>
+            <a href="MakerSpaceNinjas.html" class="nav-button">MakerSpaceNinja</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-button">Contact</a>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            </div> 
+        
+          </div>
+    </nav>
       <div class="box">
         <h2>MakerSpaceNinjas</h2>
         <p>Text goes here</p>
@@ -75,6 +83,19 @@
             <p>© 2023 My Website. All Rights Reserved.</p>
         </div>
     </footer>
-
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
 </body>
 </html>
