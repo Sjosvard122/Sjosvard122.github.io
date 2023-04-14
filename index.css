@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content:start;
   background-color: #333;
+  height: 50px;
   
 }
 
@@ -24,25 +25,32 @@ body {
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 16px;
   text-decoration: none;
 }
 .nav-image {
-  width: 5%; /* Set the image width to 50% of its original size */
-  height: 5%; /* Set the height to auto so that the aspect ratio is maintained */
+  width: 4%; /* Set the image width to 50% of its original size */
+  height: 4%; /* Set the height to auto so that the aspect ratio is maintained */
   min-height: 33px;
   min-width: 60px;
   margin: 0px 20px 0px 40px ;
-
-
   
+}
+.nav-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .dropdown {
   float: left;
   overflow: hidden;
   display: none;
 }
-
+.dropbtn{
+  height: 50px;
+}
+  
 .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;  
@@ -50,19 +58,20 @@ body {
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color: #333;
   font-family: inherit;
   margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: #08a0b7;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -70,7 +79,7 @@ body {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #fff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -78,7 +87,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #08a0b7;
 }
 
 .show {
@@ -93,7 +102,6 @@ body {
 
   .grid-container {
     display: flex;
-    
     align-items: center;
     justify-content: center;
     gap: 80px;
@@ -102,23 +110,38 @@ body {
     
   }
 
-  .grid-item {
-    background-color: #fff;
-    height: 500px;
+  .grid-item1 .grid-item2{
+    
     width: 100%;
-    border-radius: 20px;
+    
+    text-align: center;
   
     }
-  
+  .resize_fit_center{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    transition: transform .2s;
+   
+    
+  }
+  .resize_fit_center:hover{
+    transform: scale(1.1);
+
+
+  }
+
+
   .footer-container {
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center the contents horizontally */
     align-items: center; /* Center the contents vertically */
-    height:  100%; /* Set the height of the footer */
+    text-align: center;
+    height: 50px;
     width: 100%;
     background-color: rgba(51, 51, 51, 0.7); /* White color with 50% opacity */
     color: #fff; /* Set the text color */
-    text-align: center;
+    
   }
   
   footer {
@@ -146,5 +169,6 @@ body {
     }
     .dropdown {
       display: block;
+      
     }
   }
