@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -78,6 +79,10 @@ body {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
   main {
     flex-grow: 1;
